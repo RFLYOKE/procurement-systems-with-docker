@@ -173,11 +173,6 @@ CREATE TABLE IF NOT EXISTS goods_receipt_items (
 -- Semua user menggunakan password: password123
 -- ============================================================
 
--- Users: 1 admin user
--- password123 = $2a$10$w8.Wn0c2P.M8k9bF7Z2g1u4K/2e9Z/2b.2zZ.z.z.z.z.z.z.z.z.z
-INSERT INTO users (id, name, email, password, role, department) VALUES
-(1, 'Admin Procurement', 'admin@example.com', '$2a$10$C8q.f6/C4Zg8H9aM5/m2/O3G2uH6F3j.K3bK1j.z.z.z.z.z.z.z', 'admin', 'IT');
-
 -- Items: 3 barang, 2 jasa
 INSERT INTO items (code, name, description, category, unit, estimated_price, created_by) VALUES
 ('ITM-006', 'Meja Kerja Ergonomis',          'Standing desk adjustable',            'barang', 'unit',   2500000, 1),
